@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at conditional_logic.sv(17): object "cond_ex" differs only in case from object "COND_EX" in the same scope File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/conditional_logic.sv Line: 17

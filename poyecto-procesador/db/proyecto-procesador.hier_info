@@ -1,0 +1,224 @@
+|control_unit
+clk => clk.IN1
+rst => rst.IN1
+cond[0] => cond[0].IN1
+cond[1] => cond[1].IN1
+cond[2] => cond[2].IN1
+cond[3] => cond[3].IN1
+alu_flags[0] => alu_flags[0].IN1
+alu_flags[1] => alu_flags[1].IN1
+alu_flags[2] => alu_flags[2].IN1
+alu_flags[3] => alu_flags[3].IN1
+op[0] => op[0].IN1
+op[1] => op[1].IN1
+funct[0] => funct[0].IN1
+funct[1] => funct[1].IN1
+funct[2] => funct[2].IN1
+funct[3] => funct[3].IN1
+funct[4] => funct[4].IN1
+funct[5] => funct[5].IN1
+rd[0] => rd[0].IN1
+rd[1] => rd[1].IN1
+rd[2] => rd[2].IN1
+rd[3] => rd[3].IN1
+sh[0] => sh[0].IN1
+sh[1] => sh[1].IN1
+pc_src <= conditional_logic:COND_LOGIC.port8
+reg_write <= conditional_logic:COND_LOGIC.port9
+mem_write <= conditional_logic:COND_LOGIC.port10
+mem_reg <= decoder_unit:DECO_UNIT.port8
+alu_src <= decoder_unit:DECO_UNIT.port9
+imm_src[0] <= decoder_unit:DECO_UNIT.port10
+imm_src[1] <= decoder_unit:DECO_UNIT.port10
+reg_src[0] <= decoder_unit:DECO_UNIT.port11
+reg_src[1] <= decoder_unit:DECO_UNIT.port11
+alu_ctrl[0] <= decoder_unit:DECO_UNIT.port12
+alu_ctrl[1] <= decoder_unit:DECO_UNIT.port12
+alu_ctrl[2] <= decoder_unit:DECO_UNIT.port12
+alu_ctrl[3] <= decoder_unit:DECO_UNIT.port12
+
+
+|control_unit|decoder_unit:DECO_UNIT
+op[0] => op[0].IN1
+op[1] => op[1].IN1
+funct[0] => funct[0].IN2
+funct[1] => funct[1].IN2
+funct[2] => funct[2].IN2
+funct[3] => funct[3].IN2
+funct[4] => funct[4].IN2
+funct[5] => funct[5].IN2
+rd[0] => rd[0].IN1
+rd[1] => rd[1].IN1
+rd[2] => rd[2].IN1
+rd[3] => rd[3].IN1
+sh[0] => sh[0].IN1
+sh[1] => sh[1].IN1
+flag_w[0] <= alu_decoder:ALU_DECO.port4
+flag_w[1] <= alu_decoder:ALU_DECO.port4
+pcs <= pc_logic:PC_LOGIC.port3
+reg_w <= <GND>
+mem_w <= main_decoder:MAIN_DECO.port4
+mem_reg <= main_decoder:MAIN_DECO.port3
+alu_src <= main_decoder:MAIN_DECO.port5
+imm_src[0] <= main_decoder:MAIN_DECO.port6
+imm_src[1] <= main_decoder:MAIN_DECO.port6
+reg_src[0] <= main_decoder:MAIN_DECO.port8
+reg_src[1] <= main_decoder:MAIN_DECO.port8
+alu_ctrl[0] <= alu_decoder:ALU_DECO.port3
+alu_ctrl[1] <= alu_decoder:ALU_DECO.port3
+alu_ctrl[2] <= alu_decoder:ALU_DECO.port3
+alu_ctrl[3] <= alu_decoder:ALU_DECO.port3
+
+
+|control_unit|decoder_unit:DECO_UNIT|main_decoder:MAIN_DECO
+op[0] => Decoder2.IN1
+op[0] => Mux0.IN5
+op[0] => Mux1.IN5
+op[0] => Mux2.IN5
+op[0] => Mux3.IN5
+op[0] => Mux4.IN5
+op[1] => Decoder2.IN0
+op[1] => Mux0.IN4
+op[1] => Mux1.IN4
+op[1] => Mux2.IN4
+op[1] => Mux3.IN4
+op[1] => Mux4.IN4
+func[0] => Decoder1.IN0
+func[1] => ~NO_FANOUT~
+func[2] => ~NO_FANOUT~
+func[3] => ~NO_FANOUT~
+func[4] => ~NO_FANOUT~
+func[5] => Decoder0.IN0
+branch <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+mem_to_reg <= temp_mR.DB_MAX_OUTPUT_PORT_TYPE
+mem_w <= temp_memW.DB_MAX_OUTPUT_PORT_TYPE
+alu_src <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+imm_src[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+imm_src[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+reg_w <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+reg_src[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+reg_src[1] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+alu_op <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_unit|decoder_unit:DECO_UNIT|alu_decoder:ALU_DECO
+alu_op => temp_ctrl.OUTPUTSELECT
+alu_op => temp_ctrl.OUTPUTSELECT
+alu_op => temp_ctrl.OUTPUTSELECT
+alu_op => temp_ctrl.OUTPUTSELECT
+alu_op => temp_flag[1].ACLR
+alu_op => temp_flag[0].ACLR
+func[0] => Decoder1.IN0
+func[1] => Mux4.IN19
+func[1] => Decoder2.IN3
+func[1] => Mux5.IN19
+func[1] => Mux6.IN19
+func[1] => Mux3.IN19
+func[1] => Mux2.IN19
+func[1] => Mux1.IN19
+func[1] => Mux0.IN19
+func[2] => Mux4.IN18
+func[2] => Decoder2.IN2
+func[2] => Mux5.IN18
+func[2] => Mux6.IN18
+func[2] => Mux3.IN18
+func[2] => Mux2.IN18
+func[2] => Mux1.IN18
+func[2] => Mux0.IN18
+func[3] => Mux4.IN17
+func[3] => Decoder2.IN1
+func[3] => Mux5.IN17
+func[3] => Mux6.IN17
+func[3] => Mux3.IN17
+func[3] => Mux2.IN17
+func[3] => Mux1.IN17
+func[3] => Mux0.IN17
+func[4] => Mux4.IN16
+func[4] => Decoder2.IN0
+func[4] => Mux5.IN16
+func[4] => Mux6.IN16
+func[4] => Mux3.IN16
+func[4] => Mux2.IN16
+func[4] => Mux1.IN16
+func[4] => Mux0.IN16
+func[5] => Decoder0.IN0
+sh[0] => Equal0.IN63
+sh[0] => Equal1.IN63
+sh[1] => Equal0.IN62
+sh[1] => Equal1.IN62
+alu_ctrl[0] <= temp_ctrl.DB_MAX_OUTPUT_PORT_TYPE
+alu_ctrl[1] <= temp_ctrl.DB_MAX_OUTPUT_PORT_TYPE
+alu_ctrl[2] <= temp_ctrl.DB_MAX_OUTPUT_PORT_TYPE
+alu_ctrl[3] <= temp_ctrl.DB_MAX_OUTPUT_PORT_TYPE
+flag_w[0] <= temp_flag[0].DB_MAX_OUTPUT_PORT_TYPE
+flag_w[1] <= temp_flag[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_unit|decoder_unit:DECO_UNIT|pc_logic:PC_LOGIC
+rd[0] => Equal0.IN3
+rd[1] => Equal0.IN2
+rd[2] => Equal0.IN1
+rd[3] => Equal0.IN0
+branch => pc_src.IN1
+reg_w => pc_src.IN1
+pc_src <= pc_src.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_unit|conditional_logic:COND_LOGIC
+clk => clk.IN1
+rst => rst.IN1
+pcs => pc_src.IN1
+reg_w => reg_write.IN1
+mem_w => mem_write.IN1
+flag_w[0] => flag_w[0].IN1
+flag_w[1] => flag_w[1].IN1
+cond[0] => cond[0].IN1
+cond[1] => cond[1].IN1
+cond[2] => cond[2].IN1
+cond[3] => cond[3].IN1
+alu_flags[0] => alu_flags[0].IN1
+alu_flags[1] => alu_flags[1].IN1
+alu_flags[2] => alu_flags[2].IN1
+alu_flags[3] => alu_flags[3].IN1
+pc_src <= pc_src.DB_MAX_OUTPUT_PORT_TYPE
+reg_write <= reg_write.DB_MAX_OUTPUT_PORT_TYPE
+mem_write <= mem_write.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_unit|conditional_logic:COND_LOGIC|aluFlags_register:FLAGS
+clk => temp_flag10[0].CLK
+clk => temp_flag10[1].CLK
+clk => temp_flag32[0].CLK
+clk => temp_flag32[1].CLK
+rst => temp_flag10[0].ACLR
+rst => temp_flag10[1].ACLR
+rst => temp_flag32[0].ACLR
+rst => temp_flag32[1].ACLR
+flag_w[0] => ~NO_FANOUT~
+flag_w[1] => temp_flag32.OUTPUTSELECT
+flag_w[1] => temp_flag32.OUTPUTSELECT
+flag_w[1] => temp_flag10.OUTPUTSELECT
+flag_w[1] => temp_flag10.OUTPUTSELECT
+flags[0] => temp_flag10.DATAA
+flags[1] => temp_flag10.DATAA
+flags[2] => temp_flag32.DATAB
+flags[3] => temp_flag32.DATAB
+flags_32[0] <= temp_flag32[0].DB_MAX_OUTPUT_PORT_TYPE
+flags_32[1] <= temp_flag32[1].DB_MAX_OUTPUT_PORT_TYPE
+flags_10[0] <= temp_flag10[0].DB_MAX_OUTPUT_PORT_TYPE
+flags_10[1] <= temp_flag10[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control_unit|conditional_logic:COND_LOGIC|condition_check:COND_EX
+cond[0] => Mux0.IN16
+cond[1] => Mux0.IN15
+cond[2] => Mux0.IN14
+cond[3] => Mux0.IN13
+flags_32[0] => Mux0.IN18
+flags_32[1] => Mux0.IN17
+flags_32[1] => Mux0.IN12
+flags_10[0] => ~NO_FANOUT~
+flags_10[1] => Mux0.IN19
+cond_ex <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
