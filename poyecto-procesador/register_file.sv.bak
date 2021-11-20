@@ -2,9 +2,9 @@ module register_file
 (
 	input logic clk,
 	input logic rst,
-	input logic [3:0] a1,  // r1
-	input logic [3:0] a2, //r 2
-	input logic [3:0] a3, // r destino
+	input logic [3:0] a1,
+	input logic [3:0] a2,
+	input logic [3:0] a3,
 	input logic wr_e,
 	input logic [31:0] wd3,
 	input logic [31:0] r15,

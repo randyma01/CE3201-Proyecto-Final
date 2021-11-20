@@ -1,5 +1,5 @@
 Analysis & Elaboration report for proyecto-procesador
-Fri Nov 19 17:26:49 2021
+Fri Nov 19 20:49:34 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Nov 19 17:26:49 2021       ;
+; Analysis & Elaboration Status ; Successful - Fri Nov 19 20:49:34 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; proyecto-procesador                         ;
 ; Top-level Entity Name         ; control_unit                                ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 19 17:26:43 2021
+    Info: Processing started: Fri Nov 19 20:49:28 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proyecto-procesador -c proyecto-procesador --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -206,8 +206,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file sub_op.
     Info (12023): Found entity 1: sub_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sub_op.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
     Info (12023): Found entity 1: extend File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file compare_op.sv
+    Info (12023): Found entity 1: compare_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compare_op.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file compneg_op.sv
+    Info (12023): Found entity 1: compneg_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compneg_op.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sll_op.sv
+    Info (12023): Found entity 1: sll_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sll_op.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file srl_op.sv
+    Info (12023): Found entity 1: srl_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/srl_op.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_op.sv
+    Info (12023): Found entity 1: or_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/or_op.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clear_op.sv
+    Info (12023): Found entity 1: clear_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/clear_op.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file not_op.sv
+    Info (12023): Found entity 1: not_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/not_op.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file move_op.sv
+    Info (12023): Found entity 1: move_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/move_op.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file add_op.sv
+    Info (12023): Found entity 1: add_op File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/add_op.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at decoder_unit.sv(20): created implicit net for "branch" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv Line: 20
 Warning (10236): Verilog HDL Implicit Net warning at decoder_unit.sv(20): created implicit net for "reg_W" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at alu.sv(49): created implicit net for "temp_result_sub" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at alu.sv(49): created implicit net for "temp_flag_sub" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 49
 Info (12127): Elaborating entity "control_unit" for the top level hierarchy
 Info (12128): Elaborating entity "decoder_unit" for hierarchy "decoder_unit:DECO_UNIT" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/control_unit.sv Line: 24
 Warning (10034): Output port "reg_w" at decoder_unit.sv(9) has no driver File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv Line: 9
@@ -221,11 +241,11 @@ Info (12128): Elaborating entity "conditional_logic" for hierarchy "conditional_
 Info (12128): Elaborating entity "aluFlags_register" for hierarchy "conditional_logic:COND_LOGIC|aluFlags_register:FLAGS" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/conditional_logic.sv Line: 19
 Info (12128): Elaborating entity "condition_check" for hierarchy "conditional_logic:COND_LOGIC|condition_check:COND_EX" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/conditional_logic.sv Line: 20
 Info (144001): Generated suppressed messages file C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/output_files/proyecto-procesador.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4773 megabytes
-    Info: Processing ended: Fri Nov 19 17:26:49 2021
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4757 megabytes
+    Info: Processing ended: Fri Nov 19 20:49:34 2021
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +--------------------------------------------+

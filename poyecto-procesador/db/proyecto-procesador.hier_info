@@ -23,19 +23,19 @@ rd[2] => rd[2].IN1
 rd[3] => rd[3].IN1
 sh[0] => sh[0].IN1
 sh[1] => sh[1].IN1
-pc_src <= conditional_logic:COND_LOGIC.port8
-reg_write <= conditional_logic:COND_LOGIC.port9
-mem_write <= conditional_logic:COND_LOGIC.port10
-mem_reg <= decoder_unit:DECO_UNIT.port8
-alu_src <= decoder_unit:DECO_UNIT.port9
-imm_src[0] <= decoder_unit:DECO_UNIT.port10
-imm_src[1] <= decoder_unit:DECO_UNIT.port10
-reg_src[0] <= decoder_unit:DECO_UNIT.port11
-reg_src[1] <= decoder_unit:DECO_UNIT.port11
-alu_ctrl[0] <= decoder_unit:DECO_UNIT.port12
-alu_ctrl[1] <= decoder_unit:DECO_UNIT.port12
-alu_ctrl[2] <= decoder_unit:DECO_UNIT.port12
-alu_ctrl[3] <= decoder_unit:DECO_UNIT.port12
+pc_src << conditional_logic:COND_LOGIC.port8
+reg_write << conditional_logic:COND_LOGIC.port9
+mem_write << conditional_logic:COND_LOGIC.port10
+mem_reg << decoder_unit:DECO_UNIT.port8
+alu_src << decoder_unit:DECO_UNIT.port9
+imm_src[0] << decoder_unit:DECO_UNIT.port10
+imm_src[1] << decoder_unit:DECO_UNIT.port10
+reg_src[0] << decoder_unit:DECO_UNIT.port11
+reg_src[1] << decoder_unit:DECO_UNIT.port11
+alu_ctrl[0] << decoder_unit:DECO_UNIT.port12
+alu_ctrl[1] << decoder_unit:DECO_UNIT.port12
+alu_ctrl[2] << decoder_unit:DECO_UNIT.port12
+alu_ctrl[3] << decoder_unit:DECO_UNIT.port12
 
 
 |control_unit|decoder_unit:DECO_UNIT
