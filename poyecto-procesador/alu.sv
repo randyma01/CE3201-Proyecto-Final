@@ -48,7 +48,7 @@ module alu #(parameter N=32)
 	xor_op XOR_OP(src_A, src_B, temp_result_xor, temp_flag_xor); // XOR
 	sub_op SUB_OP(src_A, src_B, temp_result_sub, temp_flag_sub); // SUB
 	revsub_op REVSUB_OP(src_A, src_B, temp_result_rev_sub, temp_flag_rev_sub); // REVSUB
-	add_op ADD_OP(src_A, src_B, temp_result_sub, temp_flag_sub); // ADD
+	add_op ADD_OP(src_A, src_B, temp_result_add, temp_flag_add); // ADD
 	compare_op COMP_OP(src_A, src_B, temp_result_compare, temp_flag_compare); // COMPARE
 	compneg_op COMPNEG_OP(src_A, src_B, temp_result_comp_neg, temp_flag_comp_neg); // COMPARE NEG
 	or_op OR_OP(src_A, src_B, temp_result_or, temp_flag_or); // OR

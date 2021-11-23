@@ -1,5 +1,5 @@
 Flow report for proyecto-procesador
-Fri Nov 19 20:49:34 2021
+Mon Nov 22 21:38:56 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Fri Nov 19 20:49:34 2021       ;
+; Flow Status                 ; Successful - Mon Nov 22 21:38:56 2021       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; proyecto-procesador                         ;
-; Top-level Entity Name       ; control_unit                                ;
+; Top-level Entity Name       ; cpu                                         ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CSEMA5F31C6                                ;
 ; Timing Models               ; Final                                       ;
@@ -63,31 +63,33 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/19/2021 20:49:28 ;
+; Start date & time ; 11/22/2021 21:38:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; proyecto-procesador ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                      ;
-+-------------------------------------+----------------------------------------+---------------------+--------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value       ; Entity Name  ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------------+--------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 61573277009429.163737656812456         ; --                  ; --           ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --           ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --           ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --           ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --           ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                  ; --           ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>              ; --           ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --                  ; --           ; eda_simulation                    ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                  ; control_unit ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                  ; control_unit ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                  ; control_unit ; Top                               ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                  ; --           ; --                                ;
-; TOP_LEVEL_ENTITY                    ; control_unit                           ; proyecto-procesador ; --           ; --                                ;
-+-------------------------------------+----------------------------------------+---------------------+--------------+-----------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                     ;
++-------------------------------------+----------------------------------------+---------------------+-------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value       ; Entity Name ; Section Id                        ;
++-------------------------------------+----------------------------------------+---------------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 61573277009429.163763873019468         ; --                  ; --          ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --          ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --                  ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>              ; --          ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --                  ; --          ; eda_simulation                    ;
+; MISC_FILE                           ; instruction_memory_bb.v                ; --                  ; --          ; --                                ;
+; MISC_FILE                           ; data_memory_bb.v                       ; --                  ; --          ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                  ; cpu         ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                  ; cpu         ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                  ; cpu         ; Top                               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                  ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; cpu                                    ; proyecto-procesador ; --          ; --                                ;
++-------------------------------------+----------------------------------------+---------------------+-------------+-----------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -95,8 +97,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4757 MB             ; 00:00:16                           ;
-; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:16                           ;
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4768 MB             ; 00:00:17                           ;
+; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:17                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

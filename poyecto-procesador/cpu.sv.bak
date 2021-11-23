@@ -1,0 +1,66 @@
+module cpu
+(
+	input logic clk,
+	input logic rst,
+	input logic [31:0] instr,
+	input logic [31:0] data_to_wr,
+	output logic [31:0] alu_rslt,
+	output logic [31:0] wr_data,
+	
+);
+
+	//salida del pc
+	logic [15:0] pc_count;
+	
+	//salida del sumador
+	logic [3:0] pc_4;
+	logic [3:0] pc_8;
+	
+	//Salidas de la unidad de control
+	logic pc_src;
+	logic reg_write;
+	logic mem_write;
+	logic mem_reg;
+	logic alu_src;
+	logic [1:0] imm_src;
+	logic [1:0] reg_src;
+	logic [3:0] alu_ctrl;
+	
+	//salida de la alu
+	logic alu_flags;
+	
+	//salidas del banco de registros
+	logic [31:0] rd1;
+	logic [31:0] rd2;
+	
+	//salidas de los mux de registroa
+	logic [3:0] ra1;
+	logic [3:0] ra2;
+	
+	//salida del mux pc
+	logic [15:0] new_pc;
+	
+	//salida del mux de entrada a la ALU 
+	logic [3:0] srcb;
+	
+	//salida del modulo extend 
+	logic [31:0] ext_imm;
+	
+	
+	
+	//Instancias
+	
+	pc PC(clk,rst,1'b1, pc_count);
+	control_unit CTRL_UNT(clk,rst,instr[31:28],alu_flags,instr[27:26],instr[25:20],instr[15:12],instr[6:5],pc_src,reg_write,mem_write,alu_src,imm_src,reg_src,alu_ctrl);
+	mux_4bits MUX_1(instr[19:16], 4'd15,reg_src[0],ra1);
+	mux_4bits MUX_2(instr[3:0], instr[15:12],reg_src[1],ra2);
+	adder PC_4(pc_count,pc_4);
+	adder PC_8(pc_4,pc_8);
+	register_file REG_FILE(clk,rst,ra1,ra2,instr[15:12],reg_write,data_to_wr,pc_8,rd1,rd2);
+	extend EXTEND(imm_src,instr[23:0],ext_imm);
+	mux_32bits MUX_3(rd2,ext_imm,alu_src,srcb);
+
+	
+	
+
+endmodule 
