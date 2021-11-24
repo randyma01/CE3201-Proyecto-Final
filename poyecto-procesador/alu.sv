@@ -46,7 +46,7 @@ module alu #(parameter N=32)
   
 	and_op AND_OP(src_A, src_B, temp_result_and, temp_flag_and); // AND
 	xor_op XOR_OP(src_A, src_B, temp_result_xor, temp_flag_xor); // XOR
-	sub_op SUB_OP(src_A, src_B, temp_result_sub, temp_flag_sub); // SUB
+	sub_op SUB_OP(src_A, src_B, temp_result_substract, temp_flag_substract); // SUB
 	revsub_op REVSUB_OP(src_A, src_B, temp_result_rev_sub, temp_flag_rev_sub); // REVSUB
 	add_op ADD_OP(src_A, src_B, temp_result_add, temp_flag_add); // ADD
 	compare_op COMP_OP(src_A, src_B, temp_result_compare, temp_flag_compare); // COMPARE
@@ -59,7 +59,7 @@ module alu #(parameter N=32)
 	not_op NOT_OP(src_A, temp_result_not, temp_flag_not); // NOT
 
   
-    always @(alu_ctrl)
+    always @(*) //cualquier cambio que haya en las entradas, haga tal vara
 
       begin	
 
@@ -75,8 +75,8 @@ module alu #(parameter N=32)
 				  end
 		
           2 : begin 
-				   TRESULT = temp_result_sub;
-				   TFLAGS = temp_flag_sub;
+				   TRESULT = temp_result_substract;
+				   TFLAGS = temp_flag_substract;
 				  end
 
           3 : begin 

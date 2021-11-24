@@ -1,5 +1,5 @@
 Analysis & Elaboration report for proyecto-procesador
-Mon Nov 22 21:38:56 2021
+Wed Nov 24 03:43:11 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -12,32 +12,33 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   4. Parameter Settings for User Entity Instance: pc:PC
   5. Parameter Settings for User Entity Instance: adder:PC_4
   6. Parameter Settings for User Entity Instance: adder:PC_8
-  7. Parameter Settings for User Entity Instance: mux_4bits:MUX_1
-  8. Parameter Settings for User Entity Instance: mux_4bits:MUX_2
-  9. Parameter Settings for User Entity Instance: mux_32bits:MUX_3
- 10. Parameter Settings for User Entity Instance: alu:ALU
- 11. Parameter Settings for User Entity Instance: alu:ALU|and_op:AND_OP
- 12. Parameter Settings for User Entity Instance: alu:ALU|xor_op:XOR_OP
- 13. Parameter Settings for User Entity Instance: alu:ALU|sub_op:SUB_OP
- 14. Parameter Settings for User Entity Instance: alu:ALU|revsub_op:REVSUB_OP
- 15. Parameter Settings for User Entity Instance: alu:ALU|add_op:ADD_OP
- 16. Parameter Settings for User Entity Instance: alu:ALU|compare_op:COMP_OP
- 17. Parameter Settings for User Entity Instance: alu:ALU|compneg_op:COMPNEG_OP
- 18. Parameter Settings for User Entity Instance: alu:ALU|or_op:OR_OP
- 19. Parameter Settings for User Entity Instance: alu:ALU|move_op:MOVE_OP
- 20. Parameter Settings for User Entity Instance: alu:ALU|sll_op:SLL_OP
- 21. Parameter Settings for User Entity Instance: alu:ALU|srl_op:SRL_OP
- 22. Parameter Settings for User Entity Instance: alu:ALU|clear_op:CLEAR_OP
- 23. Parameter Settings for User Entity Instance: alu:ALU|not_op:NOT_OP
- 24. Analysis & Elaboration Settings
- 25. Port Connectivity Checks: "alu:ALU|or_op:OR_OP"
- 26. Port Connectivity Checks: "alu:ALU|sub_op:SUB_OP"
+  7. Parameter Settings for User Entity Instance: mux_16bits:MUX_0
+  8. Parameter Settings for User Entity Instance: mux_4bits:MUX_1
+  9. Parameter Settings for User Entity Instance: mux_4bits:MUX_2
+ 10. Parameter Settings for User Entity Instance: mux_32bits:MUX_3
+ 11. Parameter Settings for User Entity Instance: alu:ALU
+ 12. Parameter Settings for User Entity Instance: alu:ALU|and_op:AND_OP
+ 13. Parameter Settings for User Entity Instance: alu:ALU|xor_op:XOR_OP
+ 14. Parameter Settings for User Entity Instance: alu:ALU|sub_op:SUB_OP
+ 15. Parameter Settings for User Entity Instance: alu:ALU|revsub_op:REVSUB_OP
+ 16. Parameter Settings for User Entity Instance: alu:ALU|add_op:ADD_OP
+ 17. Parameter Settings for User Entity Instance: alu:ALU|compare_op:COMP_OP
+ 18. Parameter Settings for User Entity Instance: alu:ALU|compneg_op:COMPNEG_OP
+ 19. Parameter Settings for User Entity Instance: alu:ALU|or_op:OR_OP
+ 20. Parameter Settings for User Entity Instance: alu:ALU|move_op:MOVE_OP
+ 21. Parameter Settings for User Entity Instance: alu:ALU|sll_op:SLL_OP
+ 22. Parameter Settings for User Entity Instance: alu:ALU|srl_op:SRL_OP
+ 23. Parameter Settings for User Entity Instance: alu:ALU|clear_op:CLEAR_OP
+ 24. Parameter Settings for User Entity Instance: alu:ALU|not_op:NOT_OP
+ 25. Analysis & Elaboration Settings
+ 26. Port Connectivity Checks: "alu:ALU|or_op:OR_OP"
  27. Port Connectivity Checks: "mux_4bits:MUX_1"
- 28. Port Connectivity Checks: "control_unit:CTRL_UNT"
- 29. Port Connectivity Checks: "adder:PC_4"
- 30. Port Connectivity Checks: "pc:PC"
- 31. Analysis & Elaboration Messages
- 32. Analysis & Elaboration Suppressed Messages
+ 28. Port Connectivity Checks: "mux_16bits:MUX_0"
+ 29. Port Connectivity Checks: "control_unit:CTRL_UNT"
+ 30. Port Connectivity Checks: "adder:PC_4"
+ 31. Port Connectivity Checks: "pc:PC"
+ 32. Analysis & Elaboration Messages
+ 33. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -64,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Nov 22 21:38:56 2021       ;
+; Analysis & Elaboration Status ; Successful - Wed Nov 24 03:43:11 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; proyecto-procesador                         ;
 ; Top-level Entity Name         ; cpu                                         ;
@@ -122,6 +123,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------+
 ; N              ; 32    ; Signed Integer                 ;
 +----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_16bits:MUX_0 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; N              ; 16    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -392,16 +403,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "alu:ALU|sub_op:SUB_OP"                                                                                                        ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                     ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
-; result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "result[31..1]" have no fanouts ;
-; flags  ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "flags[3..1]" have no fanouts    ;
-+--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------+
-
-
 +---------------------------------------------+
 ; Port Connectivity Checks: "mux_4bits:MUX_1" ;
 +---------+-------+----------+----------------+
@@ -411,12 +412,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+----------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_16bits:MUX_0"                                                                                                                                                                     ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                             ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; signalA ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; signalB ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "control_unit:CTRL_UNT"                                                                   ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
-; pc_src    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; mem_write ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; mem_reg   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -446,7 +456,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 22 21:38:49 2021
+    Info: Processing started: Wed Nov 24 03:43:05 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proyecto-procesador -c proyecto-procesador --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -516,60 +526,35 @@ Info (12021): Found 1 design units, including 1 entities, in source file data_me
     Info (12023): Found entity 1: data_memory File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/data_memory.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file mux_16bits.sv
     Info (12023): Found entity 1: mux_16bits File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_16bits.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit_tb.sv
+    Info (12023): Found entity 1: control_unit_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/control_unit_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file top.sv
+    Info (12023): Found entity 1: top File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
+    Info (12023): Found entity 1: alu_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extend_tb.sv
+    Info (12023): Found entity 1: extend_tb File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend_tb.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at decoder_unit.sv(20): created implicit net for "branch" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at decoder_unit.sv(20): created implicit net for "reg_W" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at alu.sv(49): created implicit net for "temp_result_sub" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 49
-Warning (10236): Verilog HDL Implicit Net warning at alu.sv(49): created implicit net for "temp_flag_sub" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 49
 Info (12127): Elaborating entity "cpu" for the top level hierarchy
 Info (12128): Elaborating entity "pc" for hierarchy "pc:PC" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv Line: 49
 Info (12128): Elaborating entity "adder" for hierarchy "adder:PC_4" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv Line: 50
 Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:CTRL_UNT" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv Line: 52
 Info (12128): Elaborating entity "decoder_unit" for hierarchy "control_unit:CTRL_UNT|decoder_unit:DECO_UNIT" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/control_unit.sv Line: 24
-Warning (10034): Output port "reg_w" at decoder_unit.sv(9) has no driver File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv Line: 9
 Info (12128): Elaborating entity "main_decoder" for hierarchy "control_unit:CTRL_UNT|decoder_unit:DECO_UNIT|main_decoder:MAIN_DECO" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv Line: 20
 Info (12128): Elaborating entity "alu_decoder" for hierarchy "control_unit:CTRL_UNT|decoder_unit:DECO_UNIT|alu_decoder:ALU_DECO" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv Line: 21
-Warning (10240): Verilog HDL Always Construct warning at alu_decoder.sv(13): inferring latch(es) for variable "temp_flag", which holds its previous value in one or more paths through the always construct File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_decoder.sv Line: 13
+Warning (10240): Verilog HDL Always Construct warning at alu_decoder.sv(16): inferring latch(es) for variable "temp_flag", which holds its previous value in one or more paths through the always construct File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_decoder.sv Line: 16
 Info (10041): Inferred latch for "temp_flag[0]" at alu_decoder.sv(24) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_decoder.sv Line: 24
 Info (10041): Inferred latch for "temp_flag[1]" at alu_decoder.sv(24) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_decoder.sv Line: 24
 Info (12128): Elaborating entity "pc_logic" for hierarchy "control_unit:CTRL_UNT|decoder_unit:DECO_UNIT|pc_logic:PC_LOGIC" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv Line: 22
 Info (12128): Elaborating entity "conditional_logic" for hierarchy "control_unit:CTRL_UNT|conditional_logic:COND_LOGIC" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/control_unit.sv Line: 25
 Info (12128): Elaborating entity "aluFlags_register" for hierarchy "control_unit:CTRL_UNT|conditional_logic:COND_LOGIC|aluFlags_register:FLAGS" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/conditional_logic.sv Line: 19
 Info (12128): Elaborating entity "condition_check" for hierarchy "control_unit:CTRL_UNT|conditional_logic:COND_LOGIC|condition_check:COND_EX" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/conditional_logic.sv Line: 20
+Info (12128): Elaborating entity "mux_16bits" for hierarchy "mux_16bits:MUX_0" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv Line: 53
 Info (12128): Elaborating entity "mux_4bits" for hierarchy "mux_4bits:MUX_1" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv Line: 54
 Info (12128): Elaborating entity "register_file" for hierarchy "register_file:REG_FILE" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv Line: 56
 Info (12128): Elaborating entity "extend" for hierarchy "extend:EXTND" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv Line: 57
-Warning (10235): Verilog HDL Always Construct warning at extend.sv(20): variable "imm" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv Line: 20
-Warning (10235): Verilog HDL Always Construct warning at extend.sv(26): variable "imm" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv Line: 26
-Warning (10235): Verilog HDL Always Construct warning at extend.sv(32): variable "imm" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv Line: 32
-Warning (10240): Verilog HDL Always Construct warning at extend.sv(13): inferring latch(es) for variable "temp_im1", which holds its previous value in one or more paths through the always construct File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv Line: 13
-Warning (10240): Verilog HDL Always Construct warning at extend.sv(13): inferring latch(es) for variable "temp_im0", which holds its previous value in one or more paths through the always construct File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv Line: 13
-Warning (10230): Verilog HDL assignment warning at extend.sv(43): truncated value with size 33 to match size of target (32) File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv Line: 43
 Info (12128): Elaborating entity "mux_32bits" for hierarchy "mux_32bits:MUX_3" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv Line: 58
 Info (12128): Elaborating entity "alu" for hierarchy "alu:ALU" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv Line: 59
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(68): variable "temp_result_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 68
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(69): variable "temp_flag_and" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 69
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(73): variable "temp_result_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 73
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(74): variable "temp_flag_xor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 74
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(78): variable "temp_result_sub" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 78
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(79): variable "temp_flag_sub" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 79
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(83): variable "temp_result_rev_sub" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 83
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(84): variable "temp_flag_rev_sub" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 84
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(88): variable "temp_result_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 88
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(89): variable "temp_flag_add" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 89
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(93): variable "temp_result_compare" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 93
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(94): variable "temp_flag_compare" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 94
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(98): variable "temp_result_comp_neg" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 98
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(99): variable "temp_flag_comp_neg" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 99
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(103): variable "temp_result_move" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 103
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(104): variable "temp_flag_move" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 104
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(108): variable "temp_result_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 108
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(109): variable "temp_flag_sll" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 109
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(114): variable "temp_result_srl" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 114
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(115): variable "temp_flag_srl" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 115
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(119): variable "temp_result_clear" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 119
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(120): variable "temp_flag_clear" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 120
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(124): variable "temp_result_not" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 124
-Warning (10235): Verilog HDL Always Construct warning at alu.sv(125): variable "temp_flag_not" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 125
 Info (12128): Elaborating entity "and_op" for hierarchy "alu:ALU|and_op:AND_OP" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 47
 Info (12128): Elaborating entity "xor_op" for hierarchy "alu:ALU|xor_op:XOR_OP" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 48
 Info (12128): Elaborating entity "sub_op" for hierarchy "alu:ALU|sub_op:SUB_OP" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 49
@@ -585,11 +570,11 @@ Info (12128): Elaborating entity "clear_op" for hierarchy "alu:ALU|clear_op:CLEA
 Info (12128): Elaborating entity "not_op" for hierarchy "alu:ALU|not_op:NOT_OP" File: C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv Line: 59
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/output_files/proyecto-procesador.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4768 megabytes
-    Info: Processing ended: Mon Nov 22 21:38:56 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4770 megabytes
+    Info: Processing ended: Wed Nov 24 03:43:11 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +--------------------------------------------+

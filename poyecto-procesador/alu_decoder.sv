@@ -10,7 +10,7 @@ module alu_decoder
 	logic [1:0] temp_flag;
 	logic [3:0] temp_ctrl;
 	
-	always @(func,alu_op,sh)
+	always @(*)
 	begin
 		
 		if(alu_op==1'b0)

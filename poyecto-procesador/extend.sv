@@ -5,26 +5,23 @@ module extend
 	output logic [31:0] result
 	
 );
-	logic [7:0] temp_im0;
-	logic [11:0] temp_im1;
-	logic [32:0] temp_extend;
+
+	logic [31:0] temp_extend;
 
 	
-	always @(imm_src)
+	always @(*)
 		begin
 			
 			case(imm_src)
 			
 				0:
 					begin
-						 temp_im0 = imm[7:0];
-						 temp_extend ={24'd0, temp_im0};
+						 temp_extend ={24'd0, imm[7:0]};
 					end
 					
 				1:
 					begin
-						 temp_im1 = imm[11:0];
-						 temp_extend ={20'd0, temp_im1};
+						 temp_extend ={20'd0, imm[11:0]};
 					end
 					
 				2:

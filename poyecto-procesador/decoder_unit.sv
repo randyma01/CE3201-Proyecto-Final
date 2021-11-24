@@ -17,9 +17,9 @@ module decoder_unit
 
 	logic brach,alu_op;
 	
-	main_decoder MAIN_DECO(op,funct,branch,mem_reg,mem_w,alu_src,imm_src,reg_W,reg_src,alu_op);
+	main_decoder MAIN_DECO(op,funct,branch,mem_reg,mem_w,alu_src,imm_src,reg_w,reg_src,alu_op);
 	alu_decoder ALU_DECO(alu_op,funct,sh,alu_ctrl,flag_w);
-	pc_logic PC_LOGIC(rd, branch,reg_W,pcs);
+	pc_logic PC_LOGIC(rd, branch,reg_w,pcs);
 	
 
 
