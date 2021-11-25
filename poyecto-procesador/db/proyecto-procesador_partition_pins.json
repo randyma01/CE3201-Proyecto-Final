@@ -328,6 +328,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "mem_reg",
+					"strict" : false
+				},
+				{
 					"name" : "instr[6]",
 					"strict" : false
 				},
