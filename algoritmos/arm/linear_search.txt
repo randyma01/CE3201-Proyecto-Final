@@ -1,0 +1,22 @@
+1. saber cual es el valor total en ASCII de "Lorem":
+    L = 76 
+  	o = 111 
+	r = 114 
+    e = 101 
+    m = 109 
+    _________
+    = 511
+
+2. guardar el valor de de 511 es un registro [R0]
+
+3. tener dos registros más:
+    3.1 [R1] cuenta de cada valor ASCII que aparezca en cada cargaPalabra
+    3.2 [R2] cuenta de cada repeiticion de "Lorem"
+
+4. cargar de la memoria hacia los registros cada numero de en forma de ciclo
+    4.1 si es el valor 0 se termina la iteracion
+    4.2 se agarra valor por valor y se va sumando en el [R1]
+    4.3 se compara si [R1] es igual a [R0]
+        4.3.1 si es igual se suma 1 al [R2]
+        4.3.2 si no, se reincia en 0 [R0]
+    4.4 si tiene un valor de 32, entonces es un espacio " ", por lo que se reincia en 0 [R0]

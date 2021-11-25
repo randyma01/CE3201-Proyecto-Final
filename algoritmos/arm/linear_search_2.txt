@@ -1,0 +1,85 @@
+				
+pattern			DCD		1, 2, 1, 2, 1, 3, 4
+				
+skipTable			DCD		0, 0, 0, 0, 0, 0, 0
+				
+_start
+				mov		r1 ,#0 									; var i
+				mov		r2, #1 									; var j
+				ldr		r3, =pattern
+				ldr		r4, =skipTable
+				
+startLoop
+				cmp		r2, #5
+				bgt		endPrefixLoop
+				
+				ldr		r5, [r3, r1, lsl #2]
+				ldr		r6, [r3, r2, lsl #2]
+				
+firstIf
+				teq		r5, r6
+				bgt		secondIf
+				add		r1, r1, #1 								; i++
+				str		r1, [r4, r2, lsl #2] 					; storing	skipTable[j]=i
+				add		r2, r2, #1 								; j++
+				b		startLoop
+				
+secondIf
+				cmp		r1, #0
+				bgt		else
+				add		r2, r2, #1
+				b		startLoop
+				
+else
+				sub		r9, r1, #1
+				ldr		r10, [r4, r9, lsl #2]
+				mov		r1, r10
+				b		startLoop
+				
+endPrefixLoop
+				
+				;Start	the Algorithm
+text				DCD		2,1,2,1,2,1,3,4,4,8,7,1,2,1,2,1,3,4,6,7
+				
+				mov		r0, #0 									; i=0
+				mov		r1, #0 									; j=0
+				ldr		r9, =text
+				mov		r8, #0 ; repetitions
+				
+startAlgorithm
+				cmp		r0, #6 									; pattern lenght
+				bgt		giveResult
+				cmp		r1, #19  									; text lenght
+				bgt		giveResult
+				
+				;		storing	pattern[i] and [j]
+				ldr		r5, [r3, r0, lsl #2]
+				ldr		r6, [r9, r1, lsl #2]
+				
+firstCondition
+				teq		r5, r6
+				bgt		secondCondition
+				teq		r0, #6 									; compare i== pattern lenght - 1
+				bgt		secondCondition
+				add		r8, r8, #1
+				mov		r0, #0
+				b		startAlgorithm
+				
+secondCondition
+				teq		r5, r6
+				bgt		thirdCondition
+				add		r0, r0, #1
+				add		r1, r1, #1
+				b		startAlgorithm
+				
+thirdCondition
+				sub		r9, r0, #1
+				ldr		r10, [r4, r9, lsl #2]
+				mov		r0, r10
+				ldr		r9, =text
+				teq		r0, #0
+				bgt		startAlgorithm
+				add		r1, r1, #1
+				b		startAlgorithm
+				
+giveResult
