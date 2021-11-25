@@ -22,8 +22,8 @@ module cpu
 	
 	
 	//salida de los sumadores
-	logic [31:0] pc_4;
-	logic [31:0] pc_8;
+	logic [15:0] pc_4;
+	logic [15:0] pc_8;
 	
 	//salida del mux PC
 	logic [15:0] new_pc;

@@ -13,8 +13,8 @@ module alu_tb();
 	initial begin
 	#40
 	
-	alu_ctrl=4'd2;
-	srcA=32'd10;
+	alu_ctrl=4'd4;
+	srcA=32'd3;
 	srcB=32'd5;
 	#40
 	

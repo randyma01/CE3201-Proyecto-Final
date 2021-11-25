@@ -25,7 +25,7 @@ module condition_check
 				temp_condex= (flags_32[0]);
 				
 			14://Always (Ignored)
-				temp_condex= 1;
+				temp_condex= 0;
 				
 			default: temp_condex= 0;
 			

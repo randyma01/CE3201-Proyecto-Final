@@ -38,7 +38,6 @@ vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Pro
 vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv}
 vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_16bits.sv}
 vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top.sv}
-vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top_tb.sv}
 
 vlog -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador {C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top_tb.sv}
 
