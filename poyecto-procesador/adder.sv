@@ -1,4 +1,4 @@
-module adder #(parameter N=32)
+module adder #(parameter N=16)
 (
 	input logic [N-1:0] signalA, 
 	output logic [N-1:0] result

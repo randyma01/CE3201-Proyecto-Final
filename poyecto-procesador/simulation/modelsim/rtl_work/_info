@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/simulation/modelsim
 vadd_op
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1637706948
+Z2 !s110 1637810258
 !i10b 1
 !s100 @zWSa`4O1DA9nQWzhnNU@0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,22 +22,48 @@ R0
 w1637373748
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/add_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/add_op.sv
-!i122 13
+!i122 29
 Z5 L0 1 22
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1637706948.000000
+Z7 !s108 1637810258.000000
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/add_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/add_op.sv|
 !i113 1
 Z8 o-sv -work work
 Z9 !s92 -sv -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador
 Z10 tCvgOpt 0
+vadder
+R1
+Z11 !s110 1637810257
+!i10b 1
+!s100 51<zG6PNm2n7bPkkKgC360
+R3
+I:?^4Loa8;XO]b?o3@lJ983
+R4
+S1
+R0
+w1637808049
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/adder.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/adder.sv
+!i122 15
+Z12 L0 1 9
+R6
+r1
+!s85 0
+31
+Z13 !s108 1637810257.000000
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/adder.sv|
+!i113 1
+R8
+R9
+R10
 valu
 R1
-Z11 !s110 1637706946
+R11
 !i10b 1
 !s100 XA;^geGjYAHB8;:j5H;l@0
 R3
@@ -45,48 +71,75 @@ IL5SoedQRdPH2Z6<J<?HFo0
 R4
 S1
 R0
-w1637706931
+w1637707607
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv
-!i122 0
+!i122 14
 L0 1 142
 R6
 r1
 !s85 0
 31
-Z12 !s108 1637706946.000000
+R13
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu.sv|
 !i113 1
 R8
 R9
 R10
-valu_tb
+valu_decoder
 R1
-R2
+Z14 !s110 1637810256
 !i10b 1
-!s100 DB?WM@LZ55VKLZL;=mWWe1
+!s100 ?F569@2V>z0ll^R0oBC4O1
 R3
-IQ9T_aXfYcO:zKLQB];0:W3
+IGL4XZXHAf5gOj=SZc8;Q]1
 R4
 S1
 R0
-w1637706752
-8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_tb.sv
-FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_tb.sv
-!i122 14
-L0 1 30
+w1637746851
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_decoder.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_decoder.sv
+!i122 2
+L0 1 199
 R6
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_tb.sv|
+Z15 !s108 1637810256.000000
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/alu_decoder.sv|
 !i113 1
 R8
 R9
 R10
+valuFlags_register
+R1
+R14
+!i10b 1
+!s100 N6OgGVU98X1N4Dn7F33^H2
+R3
+I2kRiF7519fV5c98jfN_Ih1
+R4
+S1
+R0
+w1637363338
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/aluFlags_register.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/aluFlags_register.sv
+!i122 5
+L0 1 38
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/aluFlags_register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/aluFlags_register.sv|
+!i113 1
+R8
+R9
+R10
+nalu@flags_register
 vand_op
 R1
 R11
@@ -100,13 +153,13 @@ R0
 w1637364307
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/and_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/and_op.sv
-!i122 1
-Z13 L0 1 20
+!i122 16
+Z16 L0 1 20
 R6
 r1
 !s85 0
 31
-R12
+R13
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/and_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/and_op.sv|
 !i113 1
@@ -126,13 +179,13 @@ R0
 w1637373488
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/clear_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/clear_op.sv
-!i122 10
-R13
+!i122 26
+R16
 R6
 r1
 !s85 0
 31
-Z14 !s108 1637706947.000000
+R7
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/clear_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/clear_op.sv|
 !i113 1
@@ -141,7 +194,7 @@ R9
 R10
 vcompare_op
 R1
-R11
+R2
 !i10b 1
 !s100 A]SE]7@4FcfV[a3?V8?]@1
 R3
@@ -152,13 +205,13 @@ R0
 w1637373052
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compare_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compare_op.sv
-!i122 5
-R13
+!i122 21
+R16
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compare_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compare_op.sv|
 !i113 1
@@ -167,7 +220,7 @@ R9
 R10
 vcompneg_op
 R1
-Z15 !s110 1637706947
+R2
 !i10b 1
 !s100 3ZDzzM8;cnXi1Pi6;NCB43
 R3
@@ -178,15 +231,245 @@ R0
 w1637373113
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compneg_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compneg_op.sv
-!i122 6
-R13
+!i122 22
+R16
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compneg_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/compneg_op.sv|
+!i113 1
+R8
+R9
+R10
+vcondition_check
+R1
+R14
+!i10b 1
+!s100 L?lKXeO4T9g@b[CM;SNMS2
+R3
+IO7c^PHK^4_m]K1T`C?CT?1
+R4
+S1
+R0
+w1637363359
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/condition_check.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/condition_check.sv
+!i122 6
+L0 1 37
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/condition_check.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/condition_check.sv|
+!i113 1
+R8
+R9
+R10
+vconditional_logic
+R1
+R14
+!i10b 1
+!s100 X30RY>SC41jn=Pn<=XG^62
+R3
+IdP>k0D4]Xe:H;9:k3[8Sd3
+R4
+S1
+R0
+w1637363449
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/conditional_logic.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/conditional_logic.sv
+!i122 7
+Z17 L0 1 27
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/conditional_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/conditional_logic.sv|
+!i113 1
+R8
+R9
+R10
+vcontrol_unit
+R1
+R11
+!i10b 1
+!s100 gj28<8ENi6Ve;hdMj0K352
+R3
+I5BSGZ^H5E8X]5Cb]6A^?C1
+R4
+S1
+R0
+w1637363512
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/control_unit.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/control_unit.sv
+!i122 9
+R17
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/control_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/control_unit.sv|
+!i113 1
+R8
+R9
+R10
+vcpu
+R1
+Z18 !s110 1637810259
+!i10b 1
+!s100 _i>TBi93m3b?oQQ7bB=`D1
+R3
+I;Y0lR]OGHeo2z24<ZfmB=1
+R4
+S1
+R0
+w1637809516
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv
+!i122 30
+L0 1 68
+R6
+r1
+!s85 0
+31
+Z19 !s108 1637810259.000000
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/cpu.sv|
+!i113 1
+R8
+R9
+R10
+vdata_memory
+R14
+!i10b 1
+!s100 fH>82K]XG[e0:eGSdl:?Z3
+R3
+ILF9^8hOZQz2UGbz?30Gd93
+R4
+R0
+w1637617420
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/data_memory.v
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/data_memory.v
+!i122 1
+L0 40 66
+R6
+r1
+!s85 0
+31
+Z20 !s108 1637810255.000000
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/data_memory.v|
+!i113 1
+Z21 o-vlog01compat -work work
+Z22 !s92 -vlog01compat -work work +incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador
+R10
+vdecoder_unit
+R1
+R14
+!i10b 1
+!s100 9:ePIe7N>Co1VJ0jk]UV=1
+R3
+IBI:FP@653B4841XdA?laJ2
+R4
+S1
+R0
+w1637746985
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv
+!i122 8
+Z23 L0 1 26
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/decoder_unit.sv|
+!i113 1
+R8
+R9
+R10
+vextend
+R1
+R2
+!i10b 1
+!s100 JN4j=NL>3Col`i?k^1MLo0
+R3
+I3=Eg>>^PF?6^_=l:<z4B91
+R4
+S1
+R0
+w1637746952
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv
+!i122 20
+L0 1 42
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/extend.sv|
+!i113 1
+R8
+R9
+R10
+vinstruction_memory
+!s110 1637810255
+!i10b 1
+!s100 ;kUE:`D1NNinEDMTKohkz1
+R3
+I[Hh8C=GG41ZdB8PDODj?z3
+R4
+R0
+w1637376985
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/instruction_memory.v
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/instruction_memory.v
+!i122 0
+L0 40 61
+R6
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/instruction_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/instruction_memory.v|
+!i113 1
+R21
+R22
+R10
+vmain_decoder
+R1
+R14
+!i10b 1
+!s100 1z[4_;^dYFHi4IY<fUYgi0
+R3
+IOSWd^H4o[]l96cegTN_mS0
+R4
+S1
+R0
+w1637363212
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/main_decoder.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/main_decoder.sv
+!i122 3
+L0 1 150
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/main_decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/main_decoder.sv|
 !i113 1
 R8
 R9
@@ -204,8 +487,8 @@ R0
 w1637373708
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/move_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/move_op.sv
-!i122 12
-Z16 L0 1 19
+!i122 28
+Z24 L0 1 19
 R6
 r1
 !s85 0
@@ -213,6 +496,84 @@ r1
 R7
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/move_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/move_op.sv|
+!i113 1
+R8
+R9
+R10
+vmux_16bits
+R1
+R18
+!i10b 1
+!s100 Cd0BO6_=M4^hZ8B7`N3m12
+R3
+I3I0n4^DUDW<k76mEQgobK1
+R4
+S1
+R0
+w1637625230
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_16bits.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_16bits.sv
+!i122 31
+Z25 L0 1 10
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_16bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_16bits.sv|
+!i113 1
+R8
+R9
+R10
+vmux_32bits
+R1
+R11
+!i10b 1
+!s100 PbLS`JQ8jRnl:3_DPX1`S3
+R3
+I0o0k_ID=g?`W2YRSIi6Z<1
+R4
+S1
+R0
+w1637363810
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_32bits.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_32bits.sv
+!i122 13
+R25
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_32bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_32bits.sv|
+!i113 1
+R8
+R9
+R10
+vmux_4bits
+R1
+R11
+!i10b 1
+!s100 OmoNokAmP0WCaOQn?>T=h3
+R3
+I@dc7:0l99H7B@@=5i7gO<0
+R4
+S1
+R0
+w1637363743
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_4bits.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_4bits.sv
+!i122 12
+R25
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_4bits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/mux_4bits.sv|
 !i113 1
 R8
 R9
@@ -230,8 +591,8 @@ R0
 w1637373626
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/not_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/not_op.sv
-!i122 11
-R16
+!i122 27
+R24
 R6
 r1
 !s85 0
@@ -245,7 +606,7 @@ R9
 R10
 vor_op
 R1
-R15
+R2
 !i10b 1
 !s100 cz>8YaYjg6FQJ8:87?<JZ0
 R3
@@ -256,15 +617,93 @@ R0
 w1637373461
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/or_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/or_op.sv
-!i122 9
-R13
+!i122 25
+R16
 R6
 r1
 !s85 0
 31
-R14
+R7
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/or_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/or_op.sv|
+!i113 1
+R8
+R9
+R10
+vpc
+R1
+R11
+!i10b 1
+!s100 ;ii6GSm1R]^Bn==XQ@?J23
+R3
+IT=IdGaA1kR8?@ec6Sg^em3
+R4
+S1
+R0
+w1637807444
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/pc.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/pc.sv
+!i122 10
+L0 1 15
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/pc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/pc.sv|
+!i113 1
+R8
+R9
+R10
+vpc_logic
+R1
+R14
+!i10b 1
+!s100 UEn=RiMNGU:_TSf^]CahO2
+R3
+I@8oHf5jTZhZI8aG]biQkY2
+R4
+S1
+R0
+w1637363234
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/pc_logic.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/pc_logic.sv
+!i122 4
+L0 1 12
+R6
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/pc_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/pc_logic.sv|
+!i113 1
+R8
+R9
+R10
+vregister_file
+R1
+R11
+!i10b 1
+!s100 F5AHajSfeXG>I]S3BBn4@2
+R3
+I=W^U?cKD96dJA71giG>Qg3
+R4
+S1
+R0
+w1637616685
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/register_file.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/register_file.sv
+!i122 11
+L0 1 28
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/register_file.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/register_file.sv|
 !i113 1
 R8
 R9
@@ -282,13 +721,13 @@ R0
 w1637364356
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/revsub_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/revsub_op.sv
-!i122 3
+!i122 18
 R5
 R6
 r1
 !s85 0
 31
-R12
+R13
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/revsub_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/revsub_op.sv|
 !i113 1
@@ -297,7 +736,7 @@ R9
 R10
 vsll_op
 R1
-R15
+R2
 !i10b 1
 !s100 _JP>dclgFFIbzk3kk9Ob>3
 R3
@@ -308,13 +747,13 @@ R0
 w1637373334
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sll_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sll_op.sv
-!i122 7
-R13
+!i122 23
+R16
 R6
 r1
 !s85 0
 31
-R14
+R7
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sll_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sll_op.sv|
 !i113 1
@@ -323,7 +762,7 @@ R9
 R10
 vsrl_op
 R1
-R15
+R2
 !i10b 1
 !s100 RT3=`mQd0hnLjoZUXDPX33
 R3
@@ -334,13 +773,13 @@ R0
 w1637373402
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/srl_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/srl_op.sv
-!i122 8
-R13
+!i122 24
+R16
 R6
 r1
 !s85 0
 31
-R14
+R7
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/srl_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/srl_op.sv|
 !i113 1
@@ -360,15 +799,67 @@ R0
 w1637705672
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sub_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sub_op.sv
-!i122 4
-L0 1 26
+!i122 19
+R23
 R6
 r1
 !s85 0
 31
-R12
+R13
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sub_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/sub_op.sv|
+!i113 1
+R8
+R9
+R10
+vtop
+R1
+R18
+!i10b 1
+!s100 >edOPjleRLQFlQdlQ`QDk2
+R3
+I5h@?M:XZWn0fT<f9FFGYK0
+R4
+S1
+R0
+w1637809788
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top.sv
+!i122 32
+L0 1 17
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top.sv|
+!i113 1
+R8
+R9
+R10
+vtop_tb
+R1
+R18
+!i10b 1
+!s100 i>_oBGXCBO?<A46DVXYPb3
+R3
+IIJVbl1d>D__G@<YEd>GE<2
+R4
+S1
+R0
+w1637807179
+8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top_tb.sv
+FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top_tb.sv
+!i122 34
+R12
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/top_tb.sv|
 !i113 1
 R8
 R9
@@ -386,13 +877,13 @@ R0
 w1637706723
 8C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/xor_op.sv
 FC:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/xor_op.sv
-!i122 2
+!i122 17
 L0 1 23
 R6
 r1
 !s85 0
 31
-R12
+R13
 !s107 C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/xor_op.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador|C:/Users/kevin/Documents/TDD_Projects/Git/CE3201-Proyecto-Procesador/poyecto-procesador/xor_op.sv|
 !i113 1
